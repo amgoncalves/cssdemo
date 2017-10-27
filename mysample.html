@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bootstrap Demo Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <style>
+      p.test {
+        display: inline-block;
+      }
+
+      span.highlight,
+      span.highlight h1 {
+        margin: 15px;      
+        display: inline-block;
+        color: blue;
+        font-weight: bold;
+      }
+
+      div.highlight,
+      div.highlight h1 {
+        margin: 15px;      
+        display: inline-block;
+        color: magenta;
+        font-weight: bold;
+      }
+
+      #menu {
+        padding: 15px;
+        background-color: blue;
+        text-transform: uppercase;      
+      }
+
+      #title {
+        padding: 15px;
+        background-color: green;
+        text-transform: uppercase;      
+      }
+
+      #alert {
+        padding: 15px;
+        background-color: red;
+        text-transform: uppercase;
+      }
+
+      #sidebar {
+        padding: 15px;
+        background-color: cyan;
+      }
+      
+      #content {
+        padding: 15px;
+      }
+
+      #footer {
+        padding: 15px;
+        background-color: magenta;
+        text-transform: uppercase;
+      }
+      
+    </style>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+	<div class="col-md-10" id="title"><h1>Title</h1></div>
+	<div class="col-md-2" id="alert"><h1>Alert</h1></div>    
+      </div>
+      <div class="row">
+	<div class="col-lg-12" id="menu"><h2>Menu</h2></div>
+      </div>
+      <div class="row">
+	<div class="col-md-3" id="sidebar">
+	  <h3>Sidebar</h3>
+	  <ul>
+	    <li>Choice 1</li>
+	    <li>Choice 2</li>
+	    <li>Choice 3</li>
+	  </ul>
+	</div>
+	<div class="col-md-9" id="content">
+	  <h3>Content</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	  <p class="test">
+	    The <div class="highlight">DIV</div> and <span class="highlight">SPAN</span> elements, in conjunction with the id and class attributes, offer a generic mechanism for adding structure to documents. These elements define content to be inline (SPAN) or block-level (DIV) but impose no other presentational idioms on the content. <span class="highlight">SPAN <h1>H1</h1> SPAN</span> Generally, block-level elements may contain inline elements and other block-level elements. Generally, inline elements may <div class="highlight">DIV <h1>H1</h1> DIV</div> contain only data and other inline elements. Inherent in this structural distinction is the idea that block elements create "larger" structures than inline elements.  <a href="https://www.w3.org/TR/html401/struct/global.html#h-7.5.4">W3C</a>
+	  </p>	  
+	</div>
+      </div>
+      <div class="row">
+	<div class="col-lg-12" id="footer"><h4>Footer</h4></div>
+      </div>
+    </div>
+  <body>
+</html>
