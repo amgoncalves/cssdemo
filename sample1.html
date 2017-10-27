@@ -3,18 +3,36 @@
   <head>
     <title>Demo Page</title>
     <style>
+      
       p {
         color: red;
       }
+      
       p.intro {
         color: green;
         margin: 20px;
       }
-
-      span.highlight {
-        color: blue;
-        margin: 15px;
+      
+      p.test {
+        color: brown;
       }
+
+      span.highlight,
+      span.highlight h1 {
+        margin: 15px;      
+        display: inline-block;
+        color: blue;
+        font-weight: bold;
+      }
+
+      div.highlight,
+      div.highlight h1 {
+        margin: 15px;      
+        display: inline-block;
+        color: magenta;
+        font-weight: bold;
+      }
+      
     </style>
 
     <meta charset="utf-8">
@@ -25,7 +43,10 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="highlight">SPAN SPAN SPAN</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="highlight">SPAN SPAN SPAN</span> ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p class="test">
+    The <div class="highlight">DIV</div> and <span class="highlight">SPAN</span> elements, in conjunction with the id and class attributes, offer a generic mechanism for adding structure to documents. These elements define content to be inline (SPAN) or block-level (DIV) but impose no other presentational idioms on the content. <span class="highlight">SPAN <h1>H1</h1> SPAN</span> Generally, block-level elements may contain inline elements and other block-level elements. Generally, inline elements may <div class="highlight">DIV <h1>H1</h1> DIV</div> contain only data and other inline elements. Inherent in this structural distinction is the idea that block elements create "larger" structures than inline elements.  <a href="https://www.w3.org/TR/html401/struct/global.html#h-7.5.4">W3C</a>
     </p>
   </body>
 </html>
